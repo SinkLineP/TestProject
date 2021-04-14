@@ -16,10 +16,10 @@ body {
 
 #count-coin {
     background-color: rgb(255, 241, 47);
-    width: 100px;
+    width: 200px;
     height: 100px;
     border: 4px solid orangered;
-    border-radius: 50%;
+    border-radius: 25px 0px 25px 0px;
     text-align: center;
     line-height: 90px;
     color: red;
@@ -39,4 +39,84 @@ body {
 
 .btn-money:active {
     background-color: rgb(126, 190, 30);
+}
+
+.dost {
+    /* overflow: scroll; */
+    overflow-y: scroll;
+    position: absolute;
+    transform: translate(960px, -250px);
+    width: 300px;
+    height: 450px;
+    background-color: bisque;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.dost::-webkit-scrollbar-track {border-radius: 4px;}
+.dost::-webkit-scrollbar {width: 6px;}
+.dost::-webkit-scrollbar-thumb {border-radius: 4px;background: #f0f2f5;}
+.dost:hover::-webkit-scrollbar-thumb {background: #6a7d9b;}
+
+.dost #dost {
+    text-align: center;
+    color: rgb(129, 4, 4);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.trade {
+    color: rgb(129, 4, 4);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.trade button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top:20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fe6637;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fe6637;
+    transition: .3s ease-in-out;
+}
+
+
+.trade button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+}
+
+.trade button:hover {
+    background: #fe6637;
+    color: #fff;
+}
+
+.trade button:hover:before {
+    left: 150px;
+    transition: .5s ease-in-out;
+}
+
+
+.tradeCoin {
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(0, 25, 253);
+    position: absolute;
+    transform: translate(220px, -100px);
+}
+
+.tradeCoin img {
+    width: 30px;
+    height: 40px;
 }

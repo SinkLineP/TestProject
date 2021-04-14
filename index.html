@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/alert.css">
     <title>Document</title>
 </head>
 <body>
     <div class="money">
         <p id="count-money">Листиков: </p>
         <p id="count-coin">Монеток: </p>
+        <button class="tradeCoin" onclick="window.location.href='./pages/shop.html'"><img src="https://clever-mebel.ru/files/uploads/icon-return.png" alt=""></button>
     </div>
 
     <button id="click-money" class="btn-money" onclick="money()">Click Me!</button>
 
-    <div>
-        <p>Достижения</p>
-        <div id="trade"></div>
+    <div class="dost">
+        <p id="dost">Достижения</p>
+        <hr color="darkred">
+        <div id="trade" class="trade"></div><br>
+        <div id="trade2" class="trade"></div><br>
+        <div id="trade3" class="trade"></div><br>
+        <div id="trade4" class="trade"></div><br>
+        <div id="trade5" class="trade"></div><br>
+        <div id="trade6" class="trade"></div><br>
+        <div id="trade7" class="trade"></div><br>
+        <div id="trade8" class="trade"></div><br>
+        <div id="trade9" class="trade"></div><br>
     </div>
 
-    <div>
-        <p id="error-money"></p>
+
+    <div id="error-money" class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Danger!</strong> Don`t money.
     </div>
+
 
 
 
